@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>2.6.2 Mitosis and Meiosis</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2.6.2 Mitosis & Meiosis | OCR Biology</title>
+  <style>
+    :root{
+      --bg:#0d1117;
+      --panel:#161823;
+      --accent:#4fc3f7;
+      --accent-2:#81d4fa;
+      --muted:#a8b2d1;
+      --card:#1e2430;
+      --text:#f5f7fb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial;background:var(--bg);color:var(--text);line-height:1.7}
+    header{position:fixed;top:0;left:0;right:0;background:linear-gradient(180deg,#121417 0%, var(--panel) 100%);padding:14px 18px;z-index:1000;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:20px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand h1{margin:0;font-size:1.05rem;color:var(--accent)}
+    nav{display:flex;gap:10px;align-items:center}
+    nav a{display:inline-block;padding:8px 14px;border-radius:8px;background:transparent;color:var(--muted);text-decoration:none;font-weight:600;transition:all .18s ease;border:1px solid transparent}
+    nav a:hover{color:var(--bg); background:var(--accent); box-shadow:0 6px 14px rgba(31,142,209,0.12); transform:translateY(-2px)}
+    main{max-width:1100px;margin:110px auto 60px;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:12px}
+    .card{background:var(--card);padding:22px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+    h2{color:var(--accent);margin-top:0}
+    h3{color:var(--accent-2);margin-bottom:6px}
+    p{color:#dfe7f7;margin:0 0 12px 0}
+    ul{margin:8px 0 16px 20px;color:#cfdcf3}
+    li{margin-bottom:8px}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    .note{font-size:.95rem;padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02);color:var(--muted)}
+    @media (max-width:880px){.two-col{grid-template-columns:1fr}nav{gap:6px}main{margin:120px 16px 40px;padding:18px}}
+    footer{text-align:center;color:var(--muted);margin-top:18px;font-size:.95rem}
+    a.inline-link{color:var(--accent);text-decoration:none}
+    a.inline-link:hover{text-decoration:underline;color:var(--accent-2)}
+  </style>
 </head>
 <body>
-<h1>2.6.2 Mitosis and Meiosis</h1>
-<p>Include notes on the stages of mitosis and meiosis, differences, significance, and examples.</p>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <h1>OCR A-Level Biology — Module 2.6.2</h1>
+      <div class="note" style="font-size:.9rem;padding:6px 10px">Mitosis & Meiosis</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="all-notes.html">All Notes</a>
+      <a href="about.html">About</a>
+      <a href="2.6.1-cell-cycle.html" title="Go back to cell cycle">Cell Cycle</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Overview — Mitosis & Meiosis</h2>
+    <p>
+      Mitosis and meiosis are two forms of nuclear division that allow eukaryotic cells to proliferate and generate gametes, respectively. Both processes are tightly regulated to ensure genomic integrity.
+    </p>
+
+    <div class="two-col">
+      <section>
+        <h3>1. Mitosis</h3>
+        <ul>
+          <li><strong>Purpose:</strong> growth, tissue repair, asexual reproduction</li>
+          <li><strong>Phases:</strong>
+            <ul>
+              <li><em>Prophase:</em> Chromosomes condense, spindle forms, nuclear envelope breaks down</li>
+              <li><em>Metaphase:</em> Chromosomes align at metaphase plate</li>
+              <li><em>Anaphase:</em> Sister chromatids separate to opposite poles</li>
+              <li><em>Telophase:</em> Nuclear envelope reforms, chromosomes decondense</li>
+              <li><em>Cytokinesis:</em> Cytoplasm divides to form two daughter cells</li>
+            </ul>
+          </li>
+          <li>Produces two genetically identical diploid cells</li>
+          <li>Used to maintain chromosome number across somatic cells</li>
+        </ul>
+
+        <h3>2. Meiosis</h3>
+        <ul>
+          <li><strong>Purpose:</strong> sexual reproduction, generate genetic diversity in gametes</li>
+          <li><strong>Two successive divisions:</strong>
+            <ul>
+              <li><em>Meiosis I:</em> Homologous chromosomes separate (reduction division), crossing-over occurs</li>
+              <li><em>Meiosis II:</em> Sister chromatids separate, similar to mitosis</li>
+            </ul>
+          </li>
+          <li>Produces four genetically unique haploid cells</li>
+          <li>Independent assortment and recombination increase genetic variation</li>
+        </ul>
+
+        <h3>3. Key differences between mitosis & meiosis</h3>
+        <ul>
+          <li>Mitosis: 1 division → 2 identical diploid cells; Meiosis: 2 divisions → 4 unique haploid cells</li>
+          <li>Crossing-over occurs only in meiosis I</li>
+          <li>Meiosis introduces genetic variation; mitosis maintains genomic stability</li>
+          <li>Both have checkpoints: G₁, G₂, spindle assembly (M)</li>
+        </ul>
+
+        <h3>4. OCR focus — exam points</h3>
+        <ul>
+          <li>Describe stages clearly with chromatid/chromosome terminology</li>
+          <li>Explain genetic variation mechanisms: independent assortment, crossing-over, random fertilization</li>
+          <li>Relate errors (non-disjunction, aneuploidy) to human conditions (e.g., Down syndrome)</li>
+          <li>Link to cell cycle checkpoints and cancer for mitosis questions</li>
+        </ul>
+      </section>
+
+      <aside class="note">
+        <strong>Quick exam hints</strong>
+        <ul style="margin-top:8px">
+          <li>Always specify ploidy: diploid/haploid</li>
+          <li>Label chromatids, centromeres, homologous chromosomes in diagrams</li>
+          <li>Mitosis = somatic cells, Meiosis = gametes</li>
+          <li>Crossing-over occurs in prophase I of meiosis</li>
+        </ul>
+      </aside>
+    </div>
+
+    <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:18px 0">
+
+    <section>
+      <h3>5. Experimental context</h3>
+      <ul>
+        <li>Observe mitosis in root tip squashes using stains (e.g., aceto-orcein) and calculate mitotic index</li>
+        <li>Use microscopes to identify stages and number of dividing cells</li>
+        <li>Diagram comparisons of mitosis vs meiosis for clarity</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 OCR Biology Revision — 2.6.2 Mitosis & Meiosis | Created by Zeiad Ali
+  </footer>
+</main>
+
 </body>
 </html>

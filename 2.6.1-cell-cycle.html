@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>2.6.1 The Cell Cycle</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2.6.1 The Cell Cycle | OCR Biology</title>
+  <style>
+    /* Global / Theme */
+    :root{
+      --bg:#0d1117;
+      --panel:#161823;
+      --accent:#4fc3f7;
+      --accent-2:#81d4fa;
+      --muted:#a8b2d1;
+      --card:#1e2430;
+      --text:#f5f7fb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+
+    /* Fixed header + nav */
+    header{
+      position:fixed;top:0;left:0;right:0;
+      background:linear-gradient(180deg,#121417 0%, var(--panel) 100%);
+      padding:14px 18px;
+      z-index:1000;
+      box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    }
+    .header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:20px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand h1{margin:0;font-size:1.05rem;color:var(--accent)}
+    nav{display:flex;gap:10px;align-items:center}
+    nav a{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:8px;
+      background:transparent;
+      color:var(--muted);
+      text-decoration:none;
+      font-weight:600;
+      transition:all .18s ease;
+      border:1px solid transparent;
+    }
+    nav a:hover{color:var(--bg); background:var(--accent); box-shadow:0 6px 14px rgba(31,142,209,0.12); transform:translateY(-2px)}
+
+    /* Main container */
+    main{max-width:1100px;margin:110px auto 60px;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:12px}
+    .card{background:var(--card);padding:22px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+    h2{color:var(--accent);margin-top:0}
+    h3{color:var(--accent-2);margin-bottom:6px}
+    p{color:#dfe7f7;margin:0 0 12px 0}
+    ul{margin:8px 0 16px 20px;color:#cfdcf3}
+    li{margin-bottom:8px}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    .note{font-size:.95rem;padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02);color:var(--muted)}
+
+    /* small responsive */
+    @media (max-width:880px){
+      .two-col{grid-template-columns:1fr}
+      nav{gap:6px}
+      main{margin:120px 16px 40px;padding:18px}
+    }
+
+    footer{text-align:center;color:var(--muted);margin-top:18px;font-size:.95rem}
+    /* link style inside content */
+    a.inline-link{color:var(--accent);text-decoration:none}
+    a.inline-link:hover{text-decoration:underline;color:var(--accent-2)}
+  </style>
 </head>
 <body>
-<h1>2.6.1 The Cell Cycle</h1>
-<p>Write your notes on the stages of the cell cycle: interphase (G1, S, G2) and checkpoints.</p>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <h1>OCR A-Level Biology — Module 2.6.1</h1>
+      <div class="note" style="font-size:.9rem;padding:6px 10px">The Cell Cycle</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="all-notes.html">All Notes</a>
+      <a href="about.html">About</a>
+      <a href="2.6.2-mitosis-meiosis.html" title="Go to mitosis & meiosis (if created)">Mitosis/Meiosis</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Overview — The Cell Cycle</h2>
+    <p>
+      The cell cycle describes the ordered series of events by which a cell grows and divides to produce two genetically identical daughter cells.
+      It is split into interphase (preparatory phases) and the mitotic phase (mitosis and cytokinesis). Precise control at checkpoints ensures correct DNA replication and division — failure to control the cycle can lead to mutations or uncontrolled growth (cancer).
+    </p>
+
+    <div class="two-col">
+      <section>
+        <h3>1. Phases of the Cell Cycle (overview)</h3>
+        <ul>
+          <li><strong>G₁ (First gap)</strong> — cell grows, produces RNA, proteins and organelles; key decision point (G₁ checkpoint) to continue dividing or enter G₀ (rest).</li>
+          <li><strong>S (Synthesis)</strong> — DNA replication (each chromosome duplicated to form sister chromatids joined at the centromere); centrosomes duplicate in animal cells.</li>
+          <li><strong>G₂ (Second gap)</strong> — further growth and preparation for mitosis; DNA repair systems check for replication errors; G₂ checkpoint ensures all DNA is replicated and undamaged.</li>
+          <li><strong>M (Mitosis)</strong> — nuclear division (prophase, metaphase, anaphase, telophase) followed by <em>cytokinesis</em> (cytoplasm divides) producing two daughter cells.</li>
+        </ul>
+
+        <h3>2. Interphase detail</h3>
+        <p>
+          Interphase (G₁ → S → G₂) typically occupies the majority of the cycle. DNA is not condensed into visible chromosomes during interphase; instead it exists as chromatin. Key processes:
+        </p>
+        <ul>
+          <li>Replication origins open and replication forks proceed bidirectionally during S phase.</li>
+          <li>DNA repair pathways (e.g., mismatch repair) act during and after replication.</li>
+          <li>Cell assesses nutrient status and external signals (growth factors) in G₁ to decide whether to proliferate.</li>
+        </ul>
+
+        <h3>3. Checkpoints — control points</h3>
+        <p>
+          Checkpoints verify whether the processes at each phase are complete and if the cell is ready to proceed.
+        </p>
+        <ul>
+          <li><strong>G₁ checkpoint (Restriction point):</strong> checks cell size, nutrients, growth factors, and DNA damage. Passage commits the cell to DNA replication.</li>
+          <li><strong>G₂ checkpoint:</strong> assesses DNA replication completeness and repair of damage before mitosis.</li>
+          <li><strong>Spindle (M) checkpoint:</strong> ensures all chromosomes are properly attached to the spindle before allowing anaphase (separation of sister chromatids).</li>
+        </ul>
+
+        <h3>4. Molecular regulation: Cyclins & CDKs</h3>
+        <p>
+          The cell cycle is regulated by cyclin-dependent kinases (CDKs) and their regulatory subunits — cyclins. Cyclin levels vary during the cycle, binding to CDKs to form active complexes that phosphorylate target proteins to drive progression.
+        </p>
+        <ul>
+          <li><strong>Cyclin D (G₁):</strong> regulated by growth factors; promotes G₁ → S transition.</li>
+          <li><strong>Cyclin E (late G₁) & Cyclin A (S):</strong> required for initiation and progression of DNA replication.</li>
+          <li><strong>Cyclin B (G₂/M):</strong> activates CDK1 to trigger entry into mitosis (MPF — maturation/mitosis-promoting factor).</li>
+        </ul>
+
+        <h3>5. Checkpoint mechanisms & tumour suppression</h3>
+        <p>
+          Proteins like p53 and Rb are crucial checkpoint controllers. p53 senses DNA damage and can: halt the cycle (allow repair), trigger senescence, or initiate apoptosis if damage is irreparable. Mutations in checkpoint genes (e.g., p53) are common in cancer.
+        </p>
+
+        <h3>6. DNA damage response & apoptosis</h3>
+        <ul>
+          <li>When damage is detected, ATM/ATR kinases activate signalling cascades that stabilise p53 and activate repair genes.</li>
+          <li>If repair fails, p53 can activate pro-apoptotic pathways (e.g., BAX/BAK) leading to programmed cell death — this prevents propagation of harmful mutations.</li>
+        </ul>
+
+      </section>
+
+      <aside class="note">
+        <strong>Quick facts & exam hints</strong>
+        <ul style="margin-top:8px">
+          <li>Describe G₁, S, G₂ and M when asked for stages of the cell cycle.</li>
+          <li>For control questions, always mention cyclins, CDKs and p53 as core regulators.</li>
+          <li>For diagrams — label replication (S) and checkpoints; MPF = cyclin B + CDK1.</li>
+          <li>Link errors in checkpoint control to uncontrolled mitosis/cancer in longer-answer questions.</li>
+        </ul>
+      </aside>
+    </div>
+
+    <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:18px 0">
+
+    <section>
+      <h3>7. Mitosis vs Meiosis — brief link</h3>
+      <p>
+        Mitosis produces two genetically identical diploid daughter cells (used for growth, repair and asexual reproduction). Meiosis produces four genetically varied haploid gametes (sexual reproduction) — meiosis involves two successive divisions (meiosis I & II) and includes events such as crossing-over and independent assortment (covered in detail in 2.6.2/2.6.3 pages).
+      </p>
+
+      <h3>8. Practical & experimental contexts (OCR focus)</h3>
+      <ul>
+        <li>Cell cycle stages can be observed using staining and light microscopy (e.g., root tip squash to score mitotic index = fraction of cells in mitosis).</li>
+        <li>Flow cytometry measures DNA content to distinguish G₀/G₁, S and G₂/M populations.</li>
+        <li>Drugs that inhibit cell cycle are used clinically (e.g., chemotherapy agents targeting rapidly dividing cells — microtubule inhibitors like vincristine/vinblastine disrupt mitotic spindle).</li>
+      </ul>
+
+      <h3>9. Common exam question prompts & how to answer</h3>
+      <ul>
+        <li><em>“Describe the stages of the cell cycle”</em> — give G₁, S, G₂, M with one or two key molecular events each.</li>
+        <li><em>“Explain how the cell cycle is controlled”</em> — discuss cyclins, CDKs, checkpoints, p53 and how external signals (growth factors) modulate cyclin expression.</li>
+        <li><em>“Suggest why loss of function in p53 can cause cancer”</em> — explain failed DNA-damage response, failure to initiate apoptosis, accumulation of mutations leading to uncontrolled division.</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 OCR Biology Revision — 2.6.1 The Cell Cycle | Created by Zeiad Ali
+  </footer>
+</main>
+
 </body>
 </html>

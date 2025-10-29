@@ -1,11 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>2.5.2 Transport Across Membranes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.5.2 Transport Across Membranes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #4fc3f7;
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #4fc3f7;
+      padding: 8px 20px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #0288d1;
+    }
+
+    main {
+      margin: 120px auto;
+      padding: 20px 40px;
+      max-width: 900px;
+      background-color: #1e1e2f;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      color: #4fc3f7;
+      border-bottom: 1px solid #4fc3f7;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #81d4fa;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-<h1>2.5.2 Transport Across Membranes</h1>
-<p>Include notes on diffusion, osmosis, facilitated diffusion, active transport, and bulk transport.</p>
+  <header>
+    <h1>2.5.2 Transport Across Membranes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="all-notes.html">All Notes</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>Transport across membranes is fundamental for maintaining cellular homeostasis. The plasma membrane regulates the movement of substances into and out of the cell, ensuring correct concentrations of ions, nutrients, and water. Transport can occur through <strong>passive</strong> or <strong>active</strong> processes.</p>
+    </section>
+
+    <section>
+      <h2>Passive Transport</h2>
+      <p>Passive processes do not require energy (ATP). They rely on the kinetic energy of molecules and the concentration gradient across the membrane.</p>
+
+      <h3>Simple Diffusion</h3>
+      <ul>
+        <li>Movement of molecules or ions from a region of high concentration to a region of low concentration down a concentration gradient.</li>
+        <li>Occurs through the phospholipid bilayer for small, non-polar molecules such as <strong>O₂, CO₂, and lipid-soluble substances</strong>.</li>
+        <li>Rate of diffusion depends on:
+          <ul>
+            <li>Steepness of the concentration gradient</li>
+            <li>Temperature (higher temperature increases kinetic energy)</li>
+            <li>Surface area (microvilli increase surface area)</li>
+            <li>Nature of the molecules (small, non-polar molecules diffuse faster)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Facilitated Diffusion</h3>
+      <ul>
+        <li>Used for large polar molecules and ions (e.g. glucose, amino acids, Na⁺, Cl⁻).</li>
+        <li>Involves:
+          <ul>
+            <li><strong>Channel proteins</strong> – hydrophilic pores allowing specific ions to pass through.</li>
+            <li><strong>Carrier proteins</strong> – bind specific molecules, change shape, and release them across the membrane.</li>
+          </ul>
+        </li>
+        <li>Highly specific, passive, and controlled by the number and type of transport proteins present.</li>
+      </ul>
+
+      <h3>Osmosis</h3>
+      <ul>
+        <li>Diffusion of water molecules from an area of high water potential (low solute concentration) to low water potential (high solute concentration) through a partially permeable membrane.</li>
+        <li>Pure water has a water potential of 0 kPa; adding solutes lowers water potential.</li>
+        <li>Cells can be:
+          <ul>
+            <li><strong>Isotonic</strong> – no net movement of water</li>
+            <li><strong>Hypotonic</strong> – water enters, cell may burst (cytolysis in animal cells)</li>
+            <li><strong>Hypertonic</strong> – water leaves, cell shrinks (plasmolysis in plant cells)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Active Transport</h2>
+      <p>Active transport moves substances against their concentration gradient (from low to high concentration) and requires energy in the form of ATP.</p>
+      <ul>
+        <li>Uses <strong>carrier proteins</strong> that act as pumps, changing shape when ATP binds and is hydrolysed.</li>
+        <li>Example: uptake of <strong>Na⁺ and K⁺ ions</strong> by the sodium-potassium pump in neurons.</li>
+        <li>ATP provides energy by phosphorylating the carrier protein, altering its conformation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bulk Transport</h2>
+      <h3>Endocytosis</h3>
+      <ul>
+        <li>Movement of large molecules or particles into the cell via vesicles.</li>
+        <li>Two types:
+          <ul>
+            <li><strong>Phagocytosis</strong> – ingestion of solid particles (e.g. bacteria by white blood cells).</li>
+            <li><strong>Pinocytosis</strong> – uptake of liquids or solutes.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Exocytosis</h3>
+      <ul>
+        <li>Transport of materials out of the cell in vesicles that fuse with the plasma membrane.</li>
+        <li>Used for secretion of substances such as hormones, enzymes, and neurotransmitters.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Co-Transport</h2>
+      <p>Co-transport is a form of active transport that couples the movement of one molecule with another.</p>
+      <ul>
+        <li>For example, in the small intestine:
+          <ul>
+            <li>Sodium ions are actively transported out of epithelial cells into the blood.</li>
+            <li>This creates a concentration gradient for Na⁺ to enter the cell via a co-transport protein with glucose.</li>
+            <li>Both Na⁺ and glucose move into the cell; glucose then diffuses into the blood by facilitated diffusion.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Factors Affecting Membrane Transport</h2>
+      <ul>
+        <li><strong>Temperature:</strong> Higher temperatures increase kinetic energy and diffusion rates but may denature transport proteins.</li>
+        <li><strong>pH:</strong> Affects protein structure and therefore permeability.</li>
+        <li><strong>Solvent type:</strong> Organic solvents (e.g. ethanol) disrupt membranes, increasing permeability.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exam Tip 💡</h2>
+      <ul>
+        <li>Always link transport mechanisms to real biological examples (e.g. gas exchange, glucose absorption, synaptic transmission).</li>
+        <li>Use precise terms: “down the concentration gradient” for diffusion, “against” for active transport.</li>
+        <li>Label diagrams of the phospholipid bilayer, transport proteins, and osmosis for visual marks.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Biology Notes | Module 2.5.2 – Transport Across Membranes</p>
+  </footer>
 </body>
 </html>
